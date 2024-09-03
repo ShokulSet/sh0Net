@@ -3,7 +3,7 @@ import { ref, onMounted, onBeforeUnmount } from "vue";
 
 const showHead = ref(false);
 const about = ref<HTMLElement | null>(null);
-const headOffset = 300;
+const headOffset = 100;
 
 onMounted(() => {
   const handleScroll = () => {
@@ -27,32 +27,34 @@ onMounted(() => {
 <template>
   <!-- Header -->
   <div :class="{'transition-element': true, 'invisible': !showHead}" class="fixed top-0 left-0 w-full" style="background-color: #282828; --tw-bg-opacity: 1;">
-    <p class="text-center text-4xl my-4">
+    <p class="lg:text-3xl lg:my-4 text-lg my-2 text-center">
       Settapun Laoaree
     </p>
-    <hr class="h-0.5 my-1 border-0" style="background-color: #928374; --tw-bg-opacity: 1;">
+    <hr class="lg:h-0.5 h-px border-0" style="background-color: #928374; --tw-bg-opacity: 1;">
   </div>
-
 
   <!-- Home -->
   <div class="flex flex-col justify-center items-center h-screen" >
     <div class="relative">
-      <p class="text-7xl text-center">
+      <p class="lg:text-7xl text-3xl text-center">
         Settapun Laoaree
       </p>
-      <p class="absolute right-0 text-3xl italic font-extralight mt-4">
+      <p class="lg:text-3xl lg:mt-4 text-base mt-0 absolute right-0 italic font-extralight">
         (Insert random cool quotes.)
       </p>
     </div>
   </div>
 
   <!-- About  -->
-  <div ref="about" class="flex flex-col justify-center items-center mx-72 h-screen">
-    <p class="text-3xl text-center">
+  <div ref="about" class="lg:mx-72 mx-16 flex flex-col justify-center items-center h-screen">
+    <p class="lg:text-3xl text-lg text-center">
       I am 17 years old student in Thailand. I do code for fun. I neither have idea what to write here nor what to do.  (btw check out my work)  
     </p>
   </div>
 
+  <!-- Work -->
+  <div class="lg:mx-72 mx-16 flex flex-row justify-center items-center h-screen">
+  </div>
 </template>
 
 
