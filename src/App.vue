@@ -53,7 +53,38 @@ onMounted(() => {
   </div>
 
   <!-- Work -->
-  <div class="lg:mx-72 mx-16 flex flex-row justify-center items-center h-screen">
+  <div class="lg:mx-72 mx-16 flex lg:flex-row flex-col justify-center items-center h-screen">
+    <div class="mx-4">
+        <img src="./assets/svg/comp.svg" class="h-48 lg:my-0 -my-5">
+        <p class="lg:text-3xl text-xl text-center">
+          Competition
+        </p>
+    </div>
+    <div class="mx-4">
+        <img src="./assets/svg/act.svg" class="h-48 lg:my-0 -my-5">
+        <p class="lg:text-3xl text-xl text-center">
+          Activity
+        </p>
+    </div>
+    <div class="mx-4">
+        <img src="./assets/svg/award.svg" class="h-48 lg:my-0 -my-5">
+        <p class="lg:text-3xl text-xl text-center">
+          Award
+        </p>
+    </div>
+  </div>
+
+  <!-- Blog -->
+  <div ref="about" class="lg:mx-72 mx-16 flex flex-col justify-center items-left h-screen">
+    <p class="lg:text-3xl text-lg text-left">
+      Blog post
+    </p>
+    <p class="lg:text-3xl text-lg text-left">
+      How to make an functional atomic bomb. (01/09/2024)
+      How to make an functional atomic bomb. (01/09/2024)
+      How to make an functional atomic bomb. (01/09/2024)
+      How to make an functional atomic bomb. (01/09/2024)
+    </p>
   </div>
 </template>
 
